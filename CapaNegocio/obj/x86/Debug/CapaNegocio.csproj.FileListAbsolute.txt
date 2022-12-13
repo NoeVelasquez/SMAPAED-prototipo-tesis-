@@ -1,0 +1,13 @@
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\bin\x86\Debug\CapaNegocio.dll.config
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\bin\x86\Debug\CapaNegocio.dll
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\bin\x86\Debug\CapaNegocio.pdb
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\bin\x86\Debug\CapaDatos.dll
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\bin\x86\Debug\CapaEntidad.dll
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\bin\x86\Debug\CapaDatos.pdb
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\bin\x86\Debug\CapaDatos.dll.config
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\bin\x86\Debug\CapaEntidad.pdb
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\obj\x86\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\obj\x86\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\obj\x86\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\obj\x86\Debug\CapaNegocio.dll
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaNegocio\obj\x86\Debug\CapaNegocio.pdb

@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>En las columnas p y q aparecen las cuatro posibles combinaciones 
+de los valores de verdad para p y q, y en la columna p∧q aparecen
+ enumerados los valores de verdad de p∧q para cada una de esas 
+combinaciones. Por ejemplo, la segunda fila de la tabla nos dice que
+ cuando p es verdadero y q falso, el enunciado p ∧q es falso. De 
+hecho, de acuerdo con la tabla anterior y con la definición que hemos
+dado de la conjunción, la única forma de hacer p∧q verdadero es 
+haciendo que tanto p como q sean verdaderos (primera fila).
+
+El símbolo de la conjunción "∧" es un ejemplo de operador binario 
+("binario" alude a que el operador actúa sobre un par de 
+proposiciones).</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Como se trata de la disyunción inclusiva, p∨q es verdadera 
+cuando p es verdad, o q es verdad, o ambos lo son.
+
+Fíjate que la única manera de que un enunciado disyuntivo 
+sea falso consiste en que tanto p como q sean falsos. Por 
+este motivo, podemos decir que p∨q también significa 
+"p y q no son ambos falsos". Profundizaremos en esta 
+observación un poco más adelante.
+
+El símbolo de la disyunción "∨" es el segundo ejemplo que 
+vemos de operador binario.</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BtnBoton4.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="BtnBoton1.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="BtnBoton3.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>En las columnas p y q aparecen las cuatro posibles combinaciones 
+de los valores de verdad para p y q, y en la columna p→q aparecen
+enumerados los valores de verdad de p→q para cada una de esas 
+combinaciones. Por ejemplo, la segunda fila de la tabla nos dice que 
+cuando p es verdadero y q falso, el enunciado p→q es falso. De hecho, 
+de acuerdo con la tabla anterior y con la definición que hemos 
+dado de la implicación, la única forma de hacer p→q falso es haciendo
+que p sea verdadero, pero q falso (segunda fila).</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>El condicional p→q se lee "p implica q" o bien "si p, entonces q". 
+Un condicional siempre es verdadero, excepto cuando el 
+antecedente es verdadero y el consecuente falso.
+
+Por lo tanto, su valor de verdad queda definido por la siguiente 
+tabla de verdad.
+</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>La doble flecha horizontal ↔ es el operador bicondicional
+
+Fíjate que de la observación de la tabla de verdad 
+deducimos que para que p↔q sea verdadera, tanto p como q 
+han de tener los mismos valores de verdad, y en caso contrario 
+es falsa.</value>
+  </data>
+</root>

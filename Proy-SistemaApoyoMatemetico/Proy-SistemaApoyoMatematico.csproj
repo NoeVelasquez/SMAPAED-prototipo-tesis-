@@ -1,0 +1,1412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FE5E1639-251B-46B0-B392-E08083E87C4E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Proy_SistemaApoyoMatemetico</RootNamespace>
+    <AssemblyName>PSMAPAED</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\noemi\Desktop\PRUEBA\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>matematicas.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>19088FBB987DC2EA2021FFE9C504D8C16E6601AA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Proy-SistemaApoyoMatematico_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AccesoDatos, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AccesoDatos.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.AgentObjects">
+      <HintPath>D:\Descargas\dll\AxInterop.AgentObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\DESCARGAS\Programas\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Klik.Windows.Forms.EntryLib.V2.2005">
+      <HintPath>D:\DESCARGAS\rar\Klik.Windows.Forms.EntryLib.V2.2005\Klik.Windows.Forms.EntryLib.V2.2005.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="microsoft.visualstudio.qualitytools.agentobject">
+      <HintPath>D:\DESCARGAS\microsoft.visualstudio.qualitytools.agentobject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\Menu Docente\DatosPreguntas\EditarPreguntaFunDer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosPreguntas\EditarPreguntaFunDer.Designer.cs">
+      <DependentUpon>EditarPreguntaFunDer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosPreguntas\AdicionarPreguntasFunDer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosPreguntas\AdicionarPreguntasFunDer.Designer.cs">
+      <DependentUpon>AdicionarPreguntasFunDer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestLogForm.Designer.cs">
+      <DependentUpon>CuestLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestFinal2P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestFinal2P.Designer.cs">
+      <DependentUpon>CuestFinal2P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestCalculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestCalculo.Designer.cs">
+      <DependentUpon>CuestCalculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestLimites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestLimites.Designer.cs">
+      <DependentUpon>CuestLimites.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestDes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestDes.Designer.cs">
+      <DependentUpon>CuestDes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatosExamenOficial.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatosExamenOficial.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Desigualda\EjeDEs2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Desigualda\EjeDEs2.Designer.cs">
+      <DependentUpon>EjeDEs2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Desigualda\EjeDes1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Desigualda\EjeDes1.Designer.cs">
+      <DependentUpon>EjeDes1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Numeros Reales\EjeNumReal2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Numeros Reales\EjeNumReal2.Designer.cs">
+      <DependentUpon>EjeNumReal2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Numeros Reales\EjeNumReal1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Numeros Reales\EjeNumReal1.Designer.cs">
+      <DependentUpon>EjeNumReal1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Informe ADM\DataSet%28ListaNotaParcial%29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet%28ListaNotaParcial%29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestNumerosReales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestNumerosReales.Designer.cs">
+      <DependentUpon>CuestNumerosReales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Informe ADM\DataSet1%28listaNotas%29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1%28listaNotas%29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Estudiante  ADM\DatosEstudianteADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Estudiante  ADM\DatosEstudianteADM.Designer.cs">
+      <DependentUpon>DatosEstudianteADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Preguntas ADM\EditarPreguntaADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Preguntas ADM\EditarPreguntaADM.Designer.cs">
+      <DependentUpon>EditarPreguntaADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosPreguntas\AdicionarPregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosPreguntas\AdicionarPregunta.Designer.cs">
+      <DependentUpon>AdicionarPregunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestElipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestElipse.Designer.cs">
+      <DependentUpon>CuestElipse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosPreguntas\EditarPregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosPreguntas\EditarPregunta.Designer.cs">
+      <DependentUpon>EditarPregunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestParabola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Cuestionarios\CuestParabola.Designer.cs">
+      <DependentUpon>CuestParabola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\EjemLogica2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\EjemLogica2.Designer.cs">
+      <DependentUpon>EjemLogica2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\EjemplosLogica\EjeLogica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\EjemplosLogica\EjeLogica.Designer.cs">
+      <DependentUpon>EjeLogica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\EjemLogica1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\EjemLogica1.Designer.cs">
+      <DependentUpon>EjemLogica1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Hiperbola\EjeHiperbola1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Hiperbola\EjeHiperbola1.Designer.cs">
+      <DependentUpon>EjeHiperbola1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Hiperbola\EjeHiperbola2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Hiperbola\EjeHiperbola2.Designer.cs">
+      <DependentUpon>EjeHiperbola2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Hiperbola\EcuaHiperEjeX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Hiperbola\EcuaHiperEjeX.Designer.cs">
+      <DependentUpon>EcuaHiperEjeX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Hiperbola\EcuaHiperEjeY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Hiperbola\EcuaHiperEjeY.Designer.cs">
+      <DependentUpon>EcuaHiperEjeY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\EjeElipse2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\EjeElipse2.Designer.cs">
+      <DependentUpon>EjeElipse2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\EjeElipse1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\EjeElipse1.Designer.cs">
+      <DependentUpon>EjeElipse1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\EcuaElipseEjeY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\EcuaElipseEjeY.Designer.cs">
+      <DependentUpon>EcuaElipseEjeY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\EcuaElipseEjeX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\EcuaElipseEjeX.Designer.cs">
+      <DependentUpon>EcuaElipseEjeX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Desigualda\ViDesigualdad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Desigualda\ViDesigualdad.Designer.cs">
+      <DependentUpon>ViDesigualdad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Parabola\EjerParabola2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Parabola\EjerParabola2.Designer.cs">
+      <DependentUpon>EjerParabola2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Parabola\EjeParabola1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Parabola\EjeParabola1.Designer.cs">
+      <DependentUpon>EjeParabola1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Parabola\EcuacionesParabola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Parabola\EcuacionesParabola.Designer.cs">
+      <DependentUpon>EcuacionesParabola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosEstudiantes\DatosEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosEstudiantes\DatosEstudiante.Designer.cs">
+      <DependentUpon>DatosEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\ExamenFinalDerivadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\ExamenFinalDerivadas.Designer.cs">
+      <DependentUpon>ExamenFinalDerivadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuesRegCadena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuesRegCadena.Designer.cs">
+      <DependentUpon>CuesRegCadena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuesTipDer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuesTipDer.Designer.cs">
+      <DependentUpon>CuesTipDer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\ExamFinalFunciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\ExamFinalFunciones.Designer.cs">
+      <DependentUpon>ExamFinalFunciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuesLogar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuesLogar.Designer.cs">
+      <DependentUpon>CuesLogar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuesTrigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuesTrigo.Designer.cs">
+      <DependentUpon>CuesTrigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuestExpo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuestExpo.Designer.cs">
+      <DependentUpon>CuestExpo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuestDom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuestDom.Designer.cs">
+      <DependentUpon>CuestDom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Definicion\DefinicionVide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Definicion\DefinicionVide.designer.cs">
+      <DependentUpon>DefinicionVide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Regla de la Cadena\EjercicioRegCadDer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Regla de la Cadena\EjercicioRegCadDer.designer.cs">
+      <DependentUpon>EjercicioRegCadDer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Regla de la Cadena\Ejericicio3RegCadDer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Regla de la Cadena\Ejericicio3RegCadDer.designer.cs">
+      <DependentUpon>Ejericicio3RegCadDer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Definicion\DefinicionVideoDer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Definicion\DefinicionVideoDer.designer.cs">
+      <DependentUpon>DefinicionVideoDer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Definicion\DefVid2Dervcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Definicion\DefVid2Dervcs.designer.cs">
+      <DependentUpon>DefVid2Dervcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuestTipFun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuestTipFun.Designer.cs">
+      <DependentUpon>CuestTipFun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Trigonometricas\EjercicioTrigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Trigonometricas\EjercicioTrigo.designer.cs">
+      <DependentUpon>EjercicioTrigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Trigonometricas\Ejericcio2Trigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Trigonometricas\Ejericcio2Trigo.designer.cs">
+      <DependentUpon>Ejericcio2Trigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Logaritmicas\EjercicioLogar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Logaritmicas\EjercicioLogar.designer.cs">
+      <DependentUpon>EjercicioLogar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Dominio\EjercicioDom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Dominio\EjercicioDom.designer.cs">
+      <DependentUpon>EjercicioDom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Dominio\Ejercicio2Dom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Dominio\Ejercicio2Dom.designer.cs">
+      <DependentUpon>Ejercicio2Dom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Dominio\DominioVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Dominio\DominioVideo.designer.cs">
+      <DependentUpon>DominioVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Logaritmicas\Ejercicio2Logar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Logaritmicas\Ejercicio2Logar.designer.cs">
+      <DependentUpon>Ejercicio2Logar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Exponencial\EjerExpo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Exponencial\EjerExpo.designer.cs">
+      <DependentUpon>EjerExpo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Exponencial\Ejer2Expo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Exponencial\Ejer2Expo.designer.cs">
+      <DependentUpon>Ejer2Expo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuesInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Cuestionarios\CuesInicial.Designer.cs">
+      <DependentUpon>CuesInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Derivadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Derivadas.Designer.cs">
+      <DependentUpon>Derivadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\RegistrarUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\RegistrarUs.Designer.cs">
+      <DependentUpon>RegistrarUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MenuAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MenuAdministrador.designer.cs">
+      <DependentUpon>MenuAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones.designer.cs">
+      <DependentUpon>Funciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\IntroFuncion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\IntroFuncion.designer.cs">
+      <DependentUpon>IntroFuncion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MenuDocente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MenuDocente.Designer.cs">
+      <DependentUpon>MenuDocente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MenuSegParcial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MenuSegParcial.Designer.cs">
+      <DependentUpon>MenuSegParcial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\LF1NaturalYArtificial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\LF1NaturalYArtificial.Designer.cs">
+      <DependentUpon>LF1NaturalYArtificial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\LF2DimePreposicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\LF2DimePreposicion.Designer.cs">
+      <DependentUpon>LF2DimePreposicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\LF31Lenguaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\LF31Lenguaje.Designer.cs">
+      <DependentUpon>LF31Lenguaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\LF3Lenguaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\LF3Lenguaje.Designer.cs">
+      <DependentUpon>LF3Lenguaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\LF4Negacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\LF4Negacion.Designer.cs">
+      <DependentUpon>LF4Negacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\LF5TiposProp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\LF5TiposProp.Designer.cs">
+      <DependentUpon>LF5TiposProp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\MenuADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\MenuADM.Designer.cs">
+      <DependentUpon>MenuADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Estudiante  ADM\ListadoEstudianteNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Estudiante  ADM\ListadoEstudianteNotas.Designer.cs">
+      <DependentUpon>ListadoEstudianteNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Informe ADM\mostrardatosnotas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mostrardatosnotas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Informe ADM\mostrarNotaParcial.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mostrarNotaParcial.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Informe ADM\ListadoEstudianteNotasParcial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Informe ADM\ListadoEstudianteNotasParcial.Designer.cs">
+      <DependentUpon>ListadoEstudianteNotasParcial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosPreguntas\PresentarPregunta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosPreguntas\PresentarPregunta.Designer.cs">
+      <DependentUpon>PresentarPregunta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Formularios\Funciones\IntroFunciones\TiposFun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\IntroFunciones\TiposFun.designer.cs">
+      <DependentUpon>TiposFun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Exponencial\VideoExpo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Exponencial\VideoExpo.designer.cs">
+      <DependentUpon>VideoExpo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Logaritmicas\VideoLogar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Logaritmicas\VideoLogar.designer.cs">
+      <DependentUpon>VideoLogar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Trigonometricas\VideoTrigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\Trigonometricas\VideoTrigo.designer.cs">
+      <DependentUpon>VideoTrigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Funciones\IntroFunciones\QueFunciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Funciones\IntroFunciones\QueFunciones.Designer.cs">
+      <DependentUpon>QueFunciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Definicion\TeoriaDefDerivadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Definicion\TeoriaDefDerivadas.designer.cs">
+      <DependentUpon>TeoriaDefDerivadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Regla de la Cadena\VidReglaCadDerivadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Derivadas\Regla de la Cadena\VidReglaCadDerivadas.designer.cs">
+      <DependentUpon>VidReglaCadDerivadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Parabola\TeoQueParabola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Parabola\TeoQueParabola.Designer.cs">
+      <DependentUpon>TeoQueParabola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Hiperbola\VideHiperbola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Hiperbola\VideHiperbola.Designer.cs">
+      <DependentUpon>VideHiperbola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\VidElipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\VidElipse.Designer.cs">
+      <DependentUpon>VidElipse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\VideLogicaFormal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\VideLogicaFormal.Designer.cs">
+      <DependentUpon>VideLogicaFormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Numeros Reales\VideNumeReales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Numeros Reales\VideNumeReales.Designer.cs">
+      <DependentUpon>VideNumeReales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Teoria de conjuntos\VideTeoriaConjuntos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Teoria de conjuntos\VideTeoriaConjuntos.Designer.cs">
+      <DependentUpon>VideTeoriaConjuntos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\TeoriaElipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\TeoriaElipse.Designer.cs">
+      <DependentUpon>TeoriaElipse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\QueElipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Elipse\QueElipse.Designer.cs">
+      <DependentUpon>QueElipse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Hiperbola\TeoHiperbola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Hiperbola\TeoHiperbola.Designer.cs">
+      <DependentUpon>TeoHiperbola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\TeoriaLogicaFormal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Logica Formal\TeoriaLogicaFormal.Designer.cs">
+      <DependentUpon>TeoriaLogicaFormal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Estudiante  ADM\RegistrarUsADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Estudiante  ADM\RegistrarUsADM.Designer.cs">
+      <DependentUpon>RegistrarUsADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Informe ADM\ReporteNotas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Informe ADM\ReporteNotas.Designer.cs">
+      <DependentUpon>ReporteNotas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Informe ADM\ReporteNotasParcial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Administrativo\Informe ADM\ReporteNotasParcial.Designer.cs">
+      <DependentUpon>ReporteNotasParcial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosPreguntas\VerPreguntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Menu Docente\DatosPreguntas\VerPreguntas.Designer.cs">
+      <DependentUpon>VerPreguntas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Formularios\2doParcial\Numeros Reales\TeoNumReal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Numeros Reales\TeoNumReal.Designer.cs">
+      <DependentUpon>TeoNumReal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Desigualda\TeoDesigualdad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\2doParcial\Desigualda\TeoDesigualdad.Designer.cs">
+      <DependentUpon>TeoDesigualdad.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Formularios\Menu Docente\DatosPreguntas\EditarPreguntaFunDer.resx">
+      <DependentUpon>EditarPreguntaFunDer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Docente\DatosPreguntas\AdicionarPreguntasFunDer.resx">
+      <DependentUpon>AdicionarPreguntasFunDer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Cuestionarios\CuestLogForm.resx">
+      <DependentUpon>CuestLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Cuestionarios\CuestFinal2P.resx">
+      <DependentUpon>CuestFinal2P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Cuestionarios\CuestCalculo.resx">
+      <DependentUpon>CuestCalculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Cuestionarios\CuestLimites.resx">
+      <DependentUpon>CuestLimites.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Cuestionarios\CuestDes.resx">
+      <DependentUpon>CuestDes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Desigualda\EjeDEs2.resx">
+      <DependentUpon>EjeDEs2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Desigualda\EjeDes1.resx">
+      <DependentUpon>EjeDes1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Numeros Reales\EjeNumReal2.resx">
+      <DependentUpon>EjeNumReal2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Numeros Reales\EjeNumReal1.resx">
+      <DependentUpon>EjeNumReal1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Cuestionarios\CuestNumerosReales.resx">
+      <DependentUpon>CuestNumerosReales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Administrativo\Estudiante  ADM\DatosEstudianteADM.resx">
+      <DependentUpon>DatosEstudianteADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Administrativo\Preguntas ADM\EditarPreguntaADM.resx">
+      <DependentUpon>EditarPreguntaADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Docente\DatosPreguntas\AdicionarPregunta.resx">
+      <DependentUpon>AdicionarPregunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Cuestionarios\CuestElipse.resx">
+      <DependentUpon>CuestElipse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Docente\DatosPreguntas\EditarPregunta.resx">
+      <DependentUpon>EditarPregunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Cuestionarios\CuestParabola.resx">
+      <DependentUpon>CuestParabola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Logica Formal\EjemLogica2.resx">
+      <DependentUpon>EjemLogica2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Logica Formal\EjemplosLogica\EjeLogica.resx">
+      <DependentUpon>EjeLogica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Logica Formal\EjemLogica1.resx">
+      <DependentUpon>EjemLogica1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Hiperbola\EjeHiperbola1.resx">
+      <DependentUpon>EjeHiperbola1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Hiperbola\EjeHiperbola2.resx">
+      <DependentUpon>EjeHiperbola2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Hiperbola\EcuaHiperEjeX.resx">
+      <DependentUpon>EcuaHiperEjeX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Hiperbola\EcuaHiperEjeY.resx">
+      <DependentUpon>EcuaHiperEjeY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Elipse\EjeElipse2.resx">
+      <DependentUpon>EjeElipse2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Elipse\EjeElipse1.resx">
+      <DependentUpon>EjeElipse1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Elipse\EcuaElipseEjeY.resx">
+      <DependentUpon>EcuaElipseEjeY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Elipse\EcuaElipseEjeX.resx">
+      <DependentUpon>EcuaElipseEjeX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Desigualda\ViDesigualdad.resx">
+      <DependentUpon>ViDesigualdad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Parabola\EjerParabola2.resx">
+      <DependentUpon>EjerParabola2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Parabola\EjeParabola1.resx">
+      <DependentUpon>EjeParabola1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Parabola\EcuacionesParabola.resx">
+      <DependentUpon>EcuacionesParabola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Docente\DatosEstudiantes\DatosEstudiante.resx">
+      <DependentUpon>DatosEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuestionarios\ExamenFinalDerivadas.resx">
+      <DependentUpon>ExamenFinalDerivadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuestionarios\CuesRegCadena.resx">
+      <DependentUpon>CuesRegCadena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuestionarios\CuesTipDer.resx">
+      <DependentUpon>CuesTipDer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuestionarios\ExamFinalFunciones.resx">
+      <DependentUpon>ExamFinalFunciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuestionarios\CuesLogar.resx">
+      <DependentUpon>CuesLogar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuestionarios\CuesTrigo.resx">
+      <DependentUpon>CuesTrigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuestionarios\CuestExpo.resx">
+      <DependentUpon>CuestExpo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuestionarios\CuestDom.resx">
+      <DependentUpon>CuestDom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Derivadas\Definicion\DefinicionVide.resx">
+      <DependentUpon>DefinicionVide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Derivadas\Regla de la Cadena\EjercicioRegCadDer.resx">
+      <DependentUpon>EjercicioRegCadDer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Derivadas\Regla de la Cadena\Ejericicio3RegCadDer.resx">
+      <DependentUpon>Ejericicio3RegCadDer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Derivadas\Definicion\DefinicionVideoDer.resx">
+      <DependentUpon>DefinicionVideoDer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Derivadas\Definicion\DefVid2Dervcs.resx">
+      <DependentUpon>DefVid2Dervcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuestionarios\CuestTipFun.resx">
+      <DependentUpon>CuestTipFun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\Trigonometricas\EjercicioTrigo.resx">
+      <DependentUpon>EjercicioTrigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\Trigonometricas\Ejericcio2Trigo.resx">
+      <DependentUpon>Ejericcio2Trigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\Logaritmicas\EjercicioLogar.resx">
+      <DependentUpon>EjercicioLogar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\Dominio\EjercicioDom.resx">
+      <DependentUpon>EjercicioDom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\Dominio\Ejercicio2Dom.resx">
+      <DependentUpon>Ejercicio2Dom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\Dominio\DominioVideo.resx">
+      <DependentUpon>DominioVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\Logaritmicas\Ejercicio2Logar.resx">
+      <DependentUpon>Ejercicio2Logar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\Exponencial\EjerExpo.resx">
+      <DependentUpon>EjerExpo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\Exponencial\Ejer2Expo.resx">
+      <DependentUpon>Ejer2Expo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Cuestionarios\CuesInicial.resx">
+      <DependentUpon>CuesInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Derivadas.resx">
+      <DependentUpon>Derivadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\RegistrarUs.resx">
+      <DependentUpon>RegistrarUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MenuAdministrador.resx">
+      <DependentUpon>MenuAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones.resx">
+      <DependentUpon>Funciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\IntroFuncion.resx">
+      <DependentUpon>IntroFuncion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MenuDocente.resx">
+      <DependentUpon>MenuDocente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MenuSegParcial.resx">
+      <DependentUpon>MenuSegParcial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Logica Formal\LF1NaturalYArtificial.resx">
+      <DependentUpon>LF1NaturalYArtificial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Logica Formal\LF2DimePreposicion.resx">
+      <DependentUpon>LF2DimePreposicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Logica Formal\LF31Lenguaje.resx">
+      <DependentUpon>LF31Lenguaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Logica Formal\LF3Lenguaje.resx">
+      <DependentUpon>LF3Lenguaje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Logica Formal\LF4Negacion.resx">
+      <DependentUpon>LF4Negacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Logica Formal\LF5TiposProp.resx">
+      <DependentUpon>LF5TiposProp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Docente\DatosPreguntas\PresentarPregunta.resx">
+      <DependentUpon>PresentarPregunta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\MenuADM.resx">
+      <DependentUpon>MenuADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Administrativo\Estudiante  ADM\ListadoEstudianteNotas.resx">
+      <DependentUpon>ListadoEstudianteNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Administrativo\Informe ADM\ListadoEstudianteNotasParcial.resx">
+      <DependentUpon>ListadoEstudianteNotasParcial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaNotas.rdlc" />
+    <EmbeddedResource Include="ListaNotasParcial.rdlc" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Formularios\Funciones\IntroFunciones\TiposFun.resx">
+      <DependentUpon>TiposFun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\Exponencial\VideoExpo.resx">
+      <DependentUpon>VideoExpo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\Logaritmicas\VideoLogar.resx">
+      <DependentUpon>VideoLogar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\Trigonometricas\VideoTrigo.resx">
+      <DependentUpon>VideoTrigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Funciones\IntroFunciones\QueFunciones.resx">
+      <DependentUpon>QueFunciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Derivadas\Definicion\TeoriaDefDerivadas.resx">
+      <DependentUpon>TeoriaDefDerivadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Derivadas\Regla de la Cadena\VidReglaCadDerivadas.resx">
+      <DependentUpon>VidReglaCadDerivadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Parabola\TeoQueParabola.resx">
+      <DependentUpon>TeoQueParabola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Hiperbola\VideHiperbola.resx">
+      <DependentUpon>VideHiperbola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Elipse\VidElipse.resx">
+      <DependentUpon>VidElipse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Logica Formal\VideLogicaFormal.resx">
+      <DependentUpon>VideLogicaFormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Numeros Reales\VideNumeReales.resx">
+      <DependentUpon>VideNumeReales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Teoria de conjuntos\VideTeoriaConjuntos.resx">
+      <DependentUpon>VideTeoriaConjuntos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Elipse\TeoriaElipse.resx">
+      <DependentUpon>TeoriaElipse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Elipse\QueElipse.resx">
+      <DependentUpon>QueElipse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Hiperbola\TeoHiperbola.resx">
+      <DependentUpon>TeoHiperbola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Logica Formal\TeoriaLogicaFormal.resx">
+      <DependentUpon>TeoriaLogicaFormal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Docente\DatosPreguntas\VerPreguntas.resx">
+      <DependentUpon>VerPreguntas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Administrativo\Estudiante  ADM\RegistrarUsADM.resx">
+      <DependentUpon>RegistrarUsADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Administrativo\Informe ADM\ReporteNotas.resx">
+      <DependentUpon>ReporteNotas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Menu Administrativo\Informe ADM\ReporteNotasParcial.resx">
+      <DependentUpon>ReporteNotasParcial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Numeros Reales\TeoNumReal.resx">
+      <DependentUpon>TeoNumReal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\2doParcial\Desigualda\TeoDesigualdad.resx">
+      <DependentUpon>TeoDesigualdad.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DatosExamenOficial.xsc">
+      <DependentUpon>DatosExamenOficial.xsd</DependentUpon>
+    </None>
+    <None Include="DatosExamenOficial.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatosExamenOficial.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatosExamenOficial.xss">
+      <DependentUpon>DatosExamenOficial.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Menu Administrativo\Informe ADM\DataSet%28ListaNotaParcial%29.xsc">
+      <DependentUpon>DataSet%28ListaNotaParcial%29.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Menu Administrativo\Informe ADM\DataSet%28ListaNotaParcial%29.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet%28ListaNotaParcial%29.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Menu Administrativo\Informe ADM\DataSet%28ListaNotaParcial%29.xss">
+      <DependentUpon>DataSet%28ListaNotaParcial%29.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Menu Administrativo\Informe ADM\DataSet1%28listaNotas%29.xsc">
+      <DependentUpon>DataSet1%28listaNotas%29.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Menu Administrativo\Informe ADM\DataSet1%28listaNotas%29.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1%28listaNotas%29.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Menu Administrativo\Informe ADM\DataSet1%28listaNotas%29.xss">
+      <DependentUpon>DataSet1%28listaNotas%29.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Menu Administrativo\Informe ADM\mostrardatosnotas.xsc">
+      <DependentUpon>mostrardatosnotas.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Menu Administrativo\Informe ADM\mostrardatosnotas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mostrardatosnotas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Formularios\Menu Administrativo\Informe ADM\mostrardatosnotas.xss">
+      <DependentUpon>mostrardatosnotas.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Menu Administrativo\Informe ADM\mostrarNotaParcial.xsc">
+      <DependentUpon>mostrarNotaParcial.xsd</DependentUpon>
+    </None>
+    <None Include="Formularios\Menu Administrativo\Informe ADM\mostrarNotaParcial.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mostrarNotaParcial.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Formularios\Menu Administrativo\Informe ADM\mostrarNotaParcial.xss">
+      <DependentUpon>mostrarNotaParcial.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{3213C1E8-8DAB-4720-8A80-C557B7813533}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{DAD03648-E548-4E2B-BBB8-9C4AA51D8B8F}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{0F987489-15BE-4871-B32D-E3CDA219D13B}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\Menu Docente\DatosInformes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AgentObjects">
+      <Guid>{F5BE8BC2-7DE6-11D0-91FE-00C04FD701A5}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AgentServerObjects">
+      <Guid>{A7B93C73-7B81-11D0-AC5F-00C04FD97575}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxDoubleAgentCtl">
+      <Guid>{1147E550-A208-11DE-ABF2-002421116FB2}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="DoubleAgentCtl">
+      <Guid>{1147E550-A208-11DE-ABF2-002421116FB2}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="DoubleAgentSvr">
+      <Guid>{1147E501-A208-11DE-ABF2-002421116FB2}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Proy-SistemaApoyoMatematico_TemporaryKey.pfx" />
+    <None Include="Resources\EP3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EP4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EP5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="matematicas.ico" />
+    <Content Include="razon.ico" />
+    <None Include="Resources\NR01.jpg" />
+    <None Include="Resources\NR2.jpg" />
+    <None Include="Resources\NR2-1.jpg" />
+    <None Include="Resources\DI-1.jpg" />
+    <None Include="Resources\DI-2.jpg" />
+    <None Include="Resources\DI-3.jpg" />
+    <None Include="Resources\DI-4.png" />
+    <None Include="Resources\DI-5.jpg" />
+    <None Include="Resources\DI-6.jpg" />
+    <None Include="Resources\DI-7.jpg" />
+    <None Include="Resources\DI-8.jpg" />
+    <None Include="Resources\DI-9.jpg" />
+    <None Include="Resources\DI-10.jpg" />
+    <None Include="Resources\DI-11.jpg" />
+    <None Include="Resources\D-12.jpg" />
+    <None Include="Resources\D-13.jpg" />
+    <None Include="Resources\D-14.jpg" />
+    <None Include="Resources\D-15.jpg" />
+    <None Include="Resources\D-15-1.jpg" />
+    <None Include="Resources\DI-16.jpg" />
+    <None Include="Resources\DI-16-1.jpg" />
+    <None Include="Resources\DI-16-2.jpg" />
+    <None Include="Resources\DI-17.jpg" />
+    <None Include="Resources\DI-17-1.jpg" />
+    <None Include="Resources\DI-17-2.jpg" />
+    <None Include="Resources\DI-18.jpg" />
+    <None Include="Resources\DI-18-1.jpg" />
+    <None Include="Resources\DI-18-2.jpg" />
+    <None Include="Resources\DI-18-3.jpg" />
+    <None Include="Resources\DI-19.jpg" />
+    <None Include="Resources\DI-19-1.jpg" />
+    <None Include="Resources\Imagen1.jpg" />
+    <None Include="Resources\000.png" />
+    <None Include="Resources\pregteo1.png" />
+    <None Include="Resources\pregvid2.png" />
+    <None Include="Resources\PregTeo2.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\pngwing.com.png" />
+    <None Include="Resources\monitor.png" />
+    <None Include="Resources\lista-de-verificacion1.png" />
+    <None Include="Resources\grupo-de-estudio.png" />
+    <None Include="Resources\perfil %281%29.png" />
+    <None Include="Resources\perfil.png" />
+    <None Include="Resources\girar-a-la-izquierda.png" />
+    <None Include="Resources\boton-cerrar.bmp" />
+    <None Include="Resources\03.png" />
+    <None Include="Resources\02.png" />
+    <None Include="Resources\0.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\dato.jpg" />
+    <None Include="Resources\L10-1.png" />
+    <None Include="Resources\L10.png" />
+    <None Include="Resources\L9.png" />
+    <None Include="Resources\L8-1.png" />
+    <None Include="Resources\L8.png" />
+    <None Include="Resources\L7.png" />
+    <None Include="Resources\L6.png" />
+    <None Include="Resources\L51.png" />
+    <None Include="Resources\Tabla.jpg" />
+    <None Include="Resources\prop.jpg" />
+    <None Include="Resources\L5.png" />
+    <None Include="Resources\L31.png" />
+    <None Include="Resources\L3.png" />
+    <None Include="Resources\L2.png" />
+    <None Include="Resources\L1.png" />
+    <None Include="Resources\F6-1.png" />
+    <None Include="Resources\F6.png" />
+    <None Include="Resources\F5-1.png" />
+    <None Include="Resources\F5.png" />
+    <None Include="Resources\F4-2.png" />
+    <None Include="Resources\F4-1.png" />
+    <None Include="Resources\F4.png" />
+    <None Include="Resources\F3.png" />
+    <None Include="Resources\F3-7.png" />
+    <None Include="Resources\F3-6.png" />
+    <None Include="Resources\F3-5.png" />
+    <None Include="Resources\F3-4.png" />
+    <None Include="Resources\F3-3.png" />
+    <None Include="Resources\F3-2.png" />
+    <None Include="Resources\F3-1.png" />
+    <None Include="Resources\F22.png" />
+    <None Include="Resources\F12.png" />
+    <None Include="Resources\F2-9-2.png" />
+    <None Include="Resources\F2-9-1.png" />
+    <None Include="Resources\F2-9.png" />
+    <None Include="Resources\F2-8-2.png" />
+    <None Include="Resources\F2-8-1.png" />
+    <None Include="Resources\F2-8.png" />
+    <None Include="Resources\F2-7-2.png" />
+    <None Include="Resources\F2-7-1.png" />
+    <None Include="Resources\F2-7.png" />
+    <None Include="Resources\F2-6-1.png" />
+    <None Include="Resources\F2-6.png" />
+    <None Include="Resources\F2-5-11.png" />
+    <None Include="Resources\F2-5-1.png" />
+    <None Include="Resources\F2-5.png" />
+    <None Include="Resources\F2-4.png" />
+    <None Include="Resources\F2-31.png" />
+    <None Include="Resources\F2-21.png" />
+    <None Include="Resources\F2-12.png" />
+    <None Include="Resources\F2-11.png" />
+    <None Include="Resources\F21.png" />
+    <None Include="Resources\F11.png" />
+    <None Include="Resources\F2-3.png" />
+    <None Include="Resources\F2-2.png" />
+    <None Include="Resources\F2-1.png" />
+    <None Include="Resources\F2.png" />
+    <None Include="Resources\F1-2.png" />
+    <None Include="Resources\F1-1.png" />
+    <None Include="Resources\F1.png" />
+    <None Include="Resources\buscar.png" />
+    <None Include="Resources\lista-de-verificacion %281%291.png" />
+    <None Include="Resources\lista-de-verificacion %281%29.png" />
+    <None Include="Resources\investigar %281%291.png" />
+    <None Include="Resources\informacion.png" />
+    <None Include="Resources\investigar %281%29.png" />
+    <None Include="Resources\lista-de-verificacion.png" />
+    <None Include="Resources\investigar.png" />
+    <None Include="Resources\mate2par.png" />
+    <None Include="Resources\usuario.png" />
+    <None Include="Resources\Reducima1.png" />
+    <None Include="Resources\ima1-min.png" />
+    <None Include="Resources\ima1.png" />
+    <None Include="Resources\vocabulario.png" />
+    <None Include="Resources\formacion.png" />
+    <None Include="Resources\cruz %281%29.png" />
+    <None Include="Resources\ojo.png" />
+    <None Include="Resources\esconder.png" />
+    <None Include="Resources\R3P4RC.png" />
+    <None Include="Resources\R2P4RC.png" />
+    <None Include="Resources\R2P3RC.png" />
+    <None Include="Resources\R1P4RC.png" />
+    <None Include="Resources\R1P3RC.png" />
+    <None Include="Resources\P4RC.png" />
+    <None Include="Resources\P3RC.png" />
+    <None Include="Resources\R2P2RC.png" />
+    <None Include="Resources\R1P2RC.png" />
+    <None Include="Resources\P2RC.png" />
+    <None Include="Resources\RP3RC.png" />
+    <None Include="Resources\RP2RC.png" />
+    <None Include="Resources\RP1RC.png" />
+    <None Include="Resources\P1RC.png" />
+    <None Include="Resources\2022-07-16 15_19_59-Window.png" />
+    <None Include="Resources\Recta_tangente_y_derivada.svg.png" />
+    <None Include="Resources\ResCorrEJDom11.png" />
+    <None Include="Resources\Exlog3.png" />
+    <None Include="Resources\Exlog2.png" />
+    <None Include="Resources\Exlog1.png" />
+    <None Include="Resources\Triangle.png" />
+    <None Include="Resources\ResIncoEJDom1.png" />
+    <None Include="Resources\ResCorrEJDom1.png" />
+    <None Include="Resources\Exa1.png" />
+    <None Include="Resources\TestDom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

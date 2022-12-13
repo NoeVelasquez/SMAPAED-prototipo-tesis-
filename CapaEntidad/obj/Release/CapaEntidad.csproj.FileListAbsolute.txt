@@ -1,0 +1,6 @@
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaEntidad\bin\Release\CapaEntidad.dll
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaEntidad\bin\Release\CapaEntidad.pdb
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaEntidad\obj\Release\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaEntidad\obj\Release\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaEntidad\obj\Release\CapaEntidad.dll
+C:\Users\noemi\Source\Repos\Proy-SistemaApoyoMatemetico\CapaEntidad\obj\Release\CapaEntidad.pdb
